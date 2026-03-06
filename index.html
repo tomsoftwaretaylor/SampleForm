@@ -7,5 +7,33 @@
 </head>
 <body>
     <h1>Please Complete This Form</h1>
+    <form action ="https://httpbin.org/post" method="post">
+        <label for="applicantName">Applicant Name:</label>
+        <input type="text" name="applicantName" required><br><br>
+
+
+        <label for="ApplicantEmail"> Email address:</label>
+        <input type="email" name="ApplicantEmail" required>
+        <br><br>
+
+        <label for="selectedCourse">Select Your Course Choice:</label>
+        <select name="selectedCourse" required>
+            <option value =""> select a course</option>
+            <option value ="Eng"> Engineering</option>
+            <option value="Law"> Law</option>
+            <option value="Hist"> History</option>
+
+        </select>
+        <br><br>    
+
+        <label for="courseLevel"> Select Level of study:</label><br>
+        
+        <input type = "radio" name="courseLevel" value="L1"> Begineer <br>
+        <input type = "radio" name="courseLevel" value="L2"> Intermediate <br>
+        <input type = "radio" name="courseLevel" value="L3"> Advanced <br><br>
+        
+        <br><br>
+        <input type="submit" value="Enroll Now">
+    </form>
 </body>
 </html>
